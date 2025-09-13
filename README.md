@@ -7,7 +7,7 @@ pip install fplstat
 
 ---
 
-**Documentation**: ["https://james-leslie.github.io/fpl-stat/](https://james-leslie.github.io/fpl-stat/)
+**Documentation**: [https://james-leslie.github.io/fplstat/](https://james-leslie.github.io/fplstat)
 
 **Source code**: [https://github.com/James-Leslie/fpl-stat](https://github.com/James-Leslie/fpl-stat)
 
