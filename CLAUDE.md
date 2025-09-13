@@ -1,31 +1,36 @@
-# Summary
-Python package for loading and transforming Fantasy Premier League API data.
+# Project Summary
+Python package for loading and transforming Fantasy Premier League API data. The purpose of this package is to provide a clean and efficient way to access and manipulate FPL data for analysis and visualization. Example use cases would be ad-hoc analysis in Jupyter notebooks, or building web applications with frameworks like Streamlit or Dash.
+
+See @README.md for more details.
 
 # Tooling & Methodology
-- **Package management**: UV only (never pip/conda)
-- **Testing**: pytest with high coverage
-- **Documentation**: MkDocs + GitHub Pages
-- **Release**: Semantic versioning via GitHub releases
 
-# Code Standards
+## Python package management
+Use `uv` for everything related to project and dependency management (i.e. no `pip`, `python` or `conda` commands). This includes adding/removing packages, syncing dependencies, running tests, and building documentation.
+
+Additional instructions can be found in @docs/claude/uv-instructions.md.
+
+## Testing
+Pytest is used for testing. Aim for high test coverage, especially for core functionality. Tests should be located in the `tests/` directory and follow a clear naming convention.
+
+Use `uv run pytest` to run tests.
+
+## Documentation
+Documentation is built using MkDocs and hosted on GitHub Pages.
+
+Additional instructions can be found in @docs/claude/mkdocs-instructions.md.
+
+## Code Standards
 - Type hints and Google-style docstrings required
 - Use f-strings, follow PEP 8
 - Self-documenting code with clear naming
 
-# Key Commands
-```bash
-uv add package-name              # Add dependencies
-uv run pytest                    # Run tests
-uv run mkdocs serve              # Preview docs
-uv version --bump patch          # Version bump
-uvx pre-commit run --all-files   # Manual quality check
-```
-
-# Essential Rules
-- **Always use UV** for dependency management (never edit pyproject.toml manually)
-- **Frequent commits** with descriptive messages
-- **Pre-commit hooks** prevent low-quality commits
-- **GitHub CLI preferred** for git operations
+# Workflow Guidelines
+1. Use git branches for new features and bug fixes, via terminal commands, you may use either the GitHub CLI (e.g. `gh pr create`) or standard git commands (`git checkout -b <branch-name>`), as needed
+2. Plan changes before coding, especially for larger features or refactors
+3. Write tests for new features and bug fixes, ensure high coverage
+4. Frequent commits with descriptive messages
+5. Update documentation for new features and changes
 
 # CLAUDE.md Maintenance
 **IMPORTANT**: This CLAUDE.md file should be kept up-to-date as the project evolves. When making significant changes to tooling, workflows, or project structure, update the relevant sections in this file. This ensures future AI assistance remains consistent with project conventions.
