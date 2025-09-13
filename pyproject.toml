@@ -1,5 +1,5 @@
 [project]
-name = "fpl-stat"
+name = "fplstat"
 version = "0.1.0"
 description = "Python package for Fantasy Premier League data analysis and transformations"
 readme = "README.md"

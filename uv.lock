@@ -256,7 +256,7 @@ wheels = [
 ]
 
 [[package]]
-name = "fpl-stat"
+name = "fplstat"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
