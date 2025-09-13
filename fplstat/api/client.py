@@ -1,7 +1,19 @@
 import requests
 
 
-class FPLClient:
+class FPLstat:
+    """
+    `FPLstat` client, the main entry point for interacting with the Fantasy Premier
+    League API.
+
+    ## Example
+    ```python
+    from fplstat import FPLstat
+
+    client = FPLstat()
+    ```
+    """
+
     BASE_URL = "https://fantasy.premierleague.com/api"
 
     def __init__(self):
@@ -20,7 +32,7 @@ class FPLClient:
             self._cache["bootstrap"] = data
         return data
 
-    def get_players(self):
-        """Convenience method that extracts just players"""
+    def get_elements(self):
+        """Convenience method that extracts just elements (players)"""
         bootstrap = self.get_bootstrap()
         return bootstrap["elements"]
