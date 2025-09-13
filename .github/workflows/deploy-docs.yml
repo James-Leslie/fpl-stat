@@ -16,6 +16,7 @@ concurrency:
 
 jobs:
   deploy-docs:
+    name: Deploy Docs to GitHub Pages
     runs-on: ubuntu-latest
     environment:
       name: github-pages
