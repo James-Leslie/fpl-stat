@@ -4,15 +4,15 @@ site_url: https://james-leslie.github.io/fpl-stat/
 repo_url: https://github.com/James-Leslie/fpl-stat
 repo_name: James-Leslie/fpl-stat
 
+theme: readthedocs
+
 nav:
-  - Home: index.md
-  - Installation: install.md
-  - Examples:
-    - Getting started: 0_quickstart.ipynb
+    - Home: index.md
+    - Installation: install.md
+    - Examples:
+        - Getting started: examples/0_quickstart.ipynb
 
 plugins:
-  - mkdocs-jupyter:
-    include: ["*.ipynb"]
-    execute: true
-
-theme: readthedocs
+    - mkdocs-jupyter:
+        include: ["examples/*.ipynb"]
+        execute: true
