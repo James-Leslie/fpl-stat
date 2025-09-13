@@ -1,10 +1,9 @@
 site_name: FPLstat
 site_description: Python package for loading and transforming data from the Fantasy Premier League API
 site_url: https://james-leslie.github.io/fpl-stat/
-repo_url: https://github.com/James-Leslie/fpl-stat
 repo_name: James-Leslie/fpl-stat
 
-theme: readthedocs
+theme: material
 
 nav:
     - Home: index.md
@@ -13,6 +12,7 @@ nav:
         - Getting started: examples/0_quickstart.ipynb
 
 plugins:
+    # https://github.com/danielfrg/mkdocs-jupyter
     - mkdocs-jupyter:
         include: ["examples/*.ipynb"]
         execute: true
