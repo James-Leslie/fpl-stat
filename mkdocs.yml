@@ -24,7 +24,7 @@ theme:
         - search.share
         - search.suggest
         - toc.follow
-    logo: img/futbol-regular-full.svg
+    logo: img/futbol-regular-full-white.svg
     favicon: img/futbol-regular-full.svg
 
 nav:
